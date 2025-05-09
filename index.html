@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Password Checker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Secure Password Checker</h2>
+    <input type="password" id="password" placeholder="Enter your password" />
+    <div class="strength-meter" id="strength-meter">
+      <div class="strength-segment"></div>
+      <div class="strength-segment"></div>
+      <div class="strength-segment"></div>
+      <div class="strength-segment"></div>
+    </div>
+    <div class="strength-indicators">
+      <div class="strength-indicator" id="length-indicator">
+        <i class="fas fa-check"></i>
+        <span>Length</span>
+      </div>
+      <div class="strength-indicator" id="case-indicator">
+        <i class="fas fa-check"></i>
+        <span>Case</span>
+      </div>
+      <div class="strength-indicator" id="number-indicator">
+        <i class="fas fa-check"></i>
+        <span>Number</span>
+      </div>
+      <div class="strength-indicator" id="symbol-indicator">
+        <i class="fas fa-check"></i>
+        <span>Symbol</span>
+      </div>
+    </div>
+    <p id="strength"></p>
+  </div>
+  <script src="js.js"></script>
+</body>
+</html>
